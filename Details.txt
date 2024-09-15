@@ -1,0 +1,174 @@
+
+Topics:
+
+  1. array methods:
+
+    find - returns the first element which satisfies the condition of predicate
+
+  2. form:
+    form is used to get data/info from the user
+
+      Sample:
+        1. name
+        2. contact number
+        3. email
+        4. age
+        5. gender ( only single value can be selected )
+        6. ID Proofs You have: ( multiple values can be selected )
+            Aadhar, PAN, DL, Passport
+
+    input ( type, value, id, name )
+    label ( for value should be the id of the input element )
+    value attribute can be used to set default value
+    readonly will make the input non editable
+    disabled will disable the input
+    required will make the input as required field
+
+    input grouping - attribute name should be same for all the options
+      radio, checkbox
+
+    dropdown --> select tag
+
+    audio, video tags
+
+    for all the elements in HTML:
+     https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+  3. What is css? 
+
+      HTML: Skeleton of a webpage
+
+      CSS - Casecading Style Sheet or **Style Provider/Skin Makeup for the Skeleton**
+        language used to style a webpage using CSS selectors
+
+        property & value:
+          has a lot of specific proerties with specified property values
+        
+        css selectors:
+          body {
+            // property: value; for the body element
+          }
+
+          div, span {
+            // property: value; for the div & span element
+          }
+  4. ways to use css:
+    inline, internal, external
+
+    inline:
+      using style attribute on any element/tag
+
+    internal:
+      1. using style tag in the head element
+      2. using css selector to style any element/tag
+
+    External Styling:
+      using external stylesheet for styling
+  
+  5. prorities:
+
+      priority Order:
+
+        Inline > (Internal | External )
+        
+        Internal vs External ( Order Of Execution Latest line style will be applied )
+
+    Overriding the Priority of the Styling:
+      use of !important
+  
+  6. display property:
+      inline:
+        occupies only the width that is needed for the content
+
+        applying width & height property has no effect with inline display
+
+      block:
+        occupies the entire width of the parent
+
+        applying width&height will have an effect on its content, but still occupies the entire & does not allow other elements sit along side its
+        Means other elements will appear from next line
+
+      inline-block:
+        applying width&height will have an effect on its content
+
+        also allows other elements to sit alongside
+
+    display: none; 
+      removes the element from the DOM/Elements Tree that is displayed for the User
+    
+    visibility: hidden;
+      hides the element in the DOM/Elements Tree that is displaed to the user
+
+  7. Selections:
+
+    tag selection
+      h1 { // applies only for h1
+        font-family: monospace;
+        color: blue !important;
+      }
+
+      table, td { // applies for tables & td
+        border: 1px solid;
+      }
+
+    class or id:
+
+      class:
+        .<class-name> {
+          // styles
+        }
+
+        Eg:
+          .div-styles {
+            color: yellowgreen;
+          }
+
+        single class can be used for multiple elements
+
+      id:
+        #<id> {
+          // styles
+        }
+
+        Eg:
+          #div-one {
+            color: red;
+          }
+
+          #div-two {
+            color: lightcoral;
+          }
+        
+        ** every element should have unique id **
+
+    specificity: class vs id
+
+      id based styling will have the first preference
+
+  8. pseudo classes & 
+      link -> visited, hover, active
+
+Task:
+  Practice all the Concepts discussed 
+
+  Finish all the tasks in the below link, 
+
+  https://github.com/rvsp/HTML-CSS/blob/master/Mini-tasks/001-HTML.md
+
+  Practice only 
+      
+Next Session:
+  ::before
+  ::after
+  9. css function:
+    url() --> takes a path for the image or someother
+    linear-gradient() --> 
+    calc() --> calculate the property value from arthimetic operation (-, +)
+    eg: width: calc(100px - 30px) ---> 70px
+        parent entire width is 1000px 
+        width: calc(100% - 50px) ---> 950px
+  
+  10. child selection
+      inner child selection
+      input type selection
+      input checked selection 

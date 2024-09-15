@@ -1,0 +1,35 @@
+/* External */
+h1 {
+  background-color: lightpink;
+  color: maroon !important;
+}
+
+#my-id {
+  color: mediumaquamarine;
+}
+
+/* Style using Class names */
+.div-styles {
+  color: yellowgreen;
+}
+
+#div-one {
+  color: red;
+}
+
+#div-two {
+  color: lightcoral;
+}
+
+/* Pseudo Classes */
+a:hover {
+  color: green;
+}
+
+a:visited {
+  color: maroon;
+}
+
+a:active {
+  color: orange;
+}
